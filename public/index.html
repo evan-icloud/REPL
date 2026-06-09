@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>股票交易日线看板 - 主线题材·波段套利·操作建议</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <header class="header">
+    <h1>📊 交易数据看板</h1>
+    <div class="header-right">
+      <span class="update-time" id="updateTime">等待数据...</span>
+      <button class="btn btn-primary" onclick="refreshData()">🔄 刷新数据</button>
+      <button class="btn btn-secondary" onclick="showWatchlist()">📋 观察池</button>
+    </div>
+  </header>
+
+  <div class="indices-bar" id="indicesBar">
+    <div class="index-card skeleton">加载中...</div>
+  </div>
+
+  <div class="dashboard">
+    <div class="col-left">
+      <!-- 主线题材 -->
+      <section class="card">
+        <h2>🎯 主线题材排名</h2>
+        <div class="card-body" id="mainThemes">
+          <div class="skeleton">加载中...</div>
+        </div>
+      </section>
+
+      <!-- 波段套利标的 -->
+      <section class="card">
+        <h2>💰 波段套利观察池</h2>
+        <div class="card-body" id="bandTargets">
+          <div class="skeleton">加载中...</div>
+        </div>
+      </section>
+    </div>
+
+    <div class="col-right">
+      <!-- 市场共识 -->
+      <section class="card">
+        <h2>📈 市场共识方向</h2>
+        <div class="card-body" id="consensus">
+          <div class="skeleton">加载中...</div>
+        </div>
+      </section>
+
+      <!-- 操作建议 -->
+      <section class="card">
+        <h2>📝 明日操作建议</h2>
+        <div class="card-body" id="advice">
+          <div class="skeleton">加载中...</div>
+        </div>
+      </section>
+
+      <!-- 风险提示 -->
+      <section class="card card-danger">
+        <h2>⚠️ 风险提示</h2>
+        <div class="card-body" id="riskWarnings">
+          <div class="skeleton">加载中...</div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<!-- 观察池弹窗 -->
+<div class="modal" id="watchlistModal" style="display:none">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3>📋 观察池管理</h3>
+      <button class="btn-close" onclick="closeWatchlist()">✕</button>
+    </div>
+    <div class="modal-body" id="watchlistBody">
+      <div class="skeleton">加载中...</div>
+    </div>
+  </div>
+</div>
+<div class="modal-overlay" id="watchlistOverlay" style="display:none" onclick="closeWatchlist()"></div>
+
+<script src="app.js"></script>
+</body>
+</html>

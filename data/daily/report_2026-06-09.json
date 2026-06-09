@@ -1,0 +1,111 @@
+{
+  "generatedAt": "2026-06-09T06:46:39.259Z",
+  "marketIndices": [
+    {
+      "code": "000001",
+      "name": "上证指数",
+      "price": 4009.3,
+      "changePct": 1.26,
+      "change": 49.96,
+      "volume": 540073056,
+      "turnover": 110473394
+    },
+    {
+      "code": "399001",
+      "name": "深证成指",
+      "price": 15269.78,
+      "changePct": 3.03,
+      "change": 448.59,
+      "volume": 670114056,
+      "turnover": 137287852
+    },
+    {
+      "code": "399006",
+      "name": "创业板指",
+      "price": 3960.44,
+      "changePct": 3.9,
+      "change": 148.65,
+      "volume": 195124856,
+      "turnover": 67394841
+    },
+    {
+      "code": "000688",
+      "name": "科创50",
+      "price": 1664.9,
+      "changePct": 4.28,
+      "change": 68.33,
+      "volume": 13404433,
+      "turnover": 10598729
+    }
+  ],
+  "consensus": {
+    "marketSentiment": {
+      "shChange": 1.26,
+      "szChange": 3.03,
+      "cyChange": 3.9,
+      "avgChange": 2.73,
+      "northBoundNet": 0
+    },
+    "limitUpCount": 0,
+    "brokenBoard": 0,
+    "mainDirections": [],
+    "summary": "Strong bull market"
+  },
+  "mainThemes": [],
+  "bandTradeTargets": [],
+  "advice": {
+    "overall": "Market strong uptrend. Hold positions, new entries require careful selection. Keep position ~70%. Focus on main-theme pullbacks to support.",
+    "buyZones": [],
+    "sellConditions": [
+      "Break below 10-day MA with 2 consecutive days of main capital outflow -> reduce",
+      "High-volume stagnation (gain <1% but volume >2x 5-day avg) -> take profit",
+      "Sector leader breaks limit-up or drops sharply -> reduce sector holdings",
+      "Major index breaks key support -> overall position reduction"
+    ],
+    "riskWarnings": [
+      "Avoid chasing pure momentum names with 4+ consecutive limit-up boards and extreme-low turnover",
+      "Do not chase during opening auction; wait for intra-day stabilization",
+      "Single stock max 20% of portfolio; single sector max 30%",
+      "Watch for heavy north-bound capital outflow and index volume spikes on declines",
+      "News-driven impulse moves have poor sustainability; trade quickly"
+    ],
+    "nextDayPlan": [
+      {
+        "phase": "Pre-market (9:00-9:25)",
+        "actions": [
+          "Check overnight US market and A50 futures for opening direction",
+          "Monitor auction phase for sector strength, watch for concentrated sector gap-ups",
+          "Confirm watch-list and set alert prices"
+        ]
+      },
+      {
+        "phase": "Opening (9:30-10:00)",
+        "actions": [
+          "Gap-up: wait 30 min to confirm holding above open; if volume insufficient, consider partial profit-taking",
+          "Gap-down: wait for stabilization (15-min no new low); watch sectors trading against the trend",
+          "Monitor north-bound flow direction at open"
+        ]
+      },
+      {
+        "phase": "Mid-session (10:00-14:30)",
+        "actions": [
+          "Focus on top-2 theme persistence. Buy dips at MA support if volume contracts",
+          "If limit-up failure rate >40%, market disagreement high -> be cautious opening new positions",
+          "After 2pm, if index volume spikes upward, follow with main-theme positions"
+        ]
+      },
+      {
+        "phase": "Closing (14:30-15:00)",
+        "actions": [
+          "If tail rally with volume, add for next-day gap-up premium",
+          "If tail selloff, reduce profitable positions to lock gains",
+          "Collect daily data for review, update watchlist status"
+        ]
+      }
+    ]
+  },
+  "stats": {
+    "totalLimitUp": 0,
+    "mainInflowTotal": 0
+  }
+}

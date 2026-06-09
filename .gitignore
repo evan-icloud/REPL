@@ -1,0 +1,4 @@
+﻿node_modules/
+.env
+*.log
+code_review.txt

@@ -1,0 +1,14 @@
+{
+  "name": "stock-dashboard",
+  "version": "1.0.0",
+  "description": "每日交易数据看板 - 主线题材、波段套利、明日操作建议",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "node-cron": "^3.0.3"
+  }
+}
