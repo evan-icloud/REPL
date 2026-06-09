@@ -1,105 +1,105 @@
 {
-  "generatedAt": "2026-06-09T06:46:39.259Z",
+  "generatedAt": "2026-06-09T09:53:10.274Z",
   "marketIndices": [
     {
       "code": "000001",
       "name": "上证指数",
-      "price": 4009.3,
-      "changePct": 1.26,
-      "change": 49.96,
-      "volume": 540073056,
-      "turnover": 110473394
+      "price": 4010.03,
+      "changePct": 1.28,
+      "change": 50.69,
+      "volume": 576570090,
+      "turnover": 117308893
     },
     {
       "code": "399001",
       "name": "深证成指",
-      "price": 15269.78,
-      "changePct": 3.03,
-      "change": 448.59,
-      "volume": 670114056,
-      "turnover": 137287852
+      "price": 15268.71,
+      "changePct": 3.02,
+      "change": 447.52,
+      "volume": 718050679,
+      "turnover": 146720713
     },
     {
       "code": "399006",
       "name": "创业板指",
-      "price": 3960.44,
-      "changePct": 3.9,
-      "change": 148.65,
-      "volume": 195124856,
-      "turnover": 67394841
+      "price": 3961.75,
+      "changePct": 3.93,
+      "change": 149.96,
+      "volume": 209755585,
+      "turnover": 72024147
     },
     {
       "code": "000688",
       "name": "科创50",
-      "price": 1664.9,
-      "changePct": 4.28,
-      "change": 68.33,
-      "volume": 13404433,
-      "turnover": 10598729
+      "price": 1663.11,
+      "changePct": 4.17,
+      "change": 66.54,
+      "volume": 14098958,
+      "turnover": 11236643
     }
   ],
   "consensus": {
     "marketSentiment": {
-      "shChange": 1.26,
-      "szChange": 3.03,
-      "cyChange": 3.9,
-      "avgChange": 2.73,
+      "shChange": 1.28,
+      "szChange": 3.02,
+      "cyChange": 3.93,
+      "avgChange": 2.7433333333333336,
       "northBoundNet": 0
     },
     "limitUpCount": 0,
     "brokenBoard": 0,
     "mainDirections": [],
-    "summary": "Strong bull market"
+    "summary": "强势多头市场"
   },
   "mainThemes": [],
   "bandTradeTargets": [],
   "advice": {
-    "overall": "Market strong uptrend. Hold positions, new entries require careful selection. Keep position ~70%. Focus on main-theme pullbacks to support.",
+    "overall": "市场强势上涨，持仓为主，新开仓需精选标的。仓位控制在70%左右，重点关注主线题材回调支撑位。",
     "buyZones": [],
     "sellConditions": [
-      "Break below 10-day MA with 2 consecutive days of main capital outflow -> reduce",
-      "High-volume stagnation (gain <1% but volume >2x 5-day avg) -> take profit",
-      "Sector leader breaks limit-up or drops sharply -> reduce sector holdings",
-      "Major index breaks key support -> overall position reduction"
+      "跌破10日均线且连续2日主力资金净流出 → 减仓",
+      "放量滞涨（涨幅不足1%但成交量超过5日均量2倍）→ 止盈",
+      "板块龙头炸板或大幅跳水 → 减持该板块持仓",
+      "大盘指数跌破关键支撑位 → 整体减仓"
     ],
     "riskWarnings": [
-      "Avoid chasing pure momentum names with 4+ consecutive limit-up boards and extreme-low turnover",
-      "Do not chase during opening auction; wait for intra-day stabilization",
-      "Single stock max 20% of portfolio; single sector max 30%",
-      "Watch for heavy north-bound capital outflow and index volume spikes on declines",
-      "News-driven impulse moves have poor sustainability; trade quickly"
+      "避免追高连续4板以上且换手极低的纯情绪炒作个股",
+      "集合竞价阶段不追涨，等待开盘后走势确认",
+      "单只个股仓位不超过总仓位20%，单一板块不超过30%",
+      "密切关注北向资金大幅流出及大盘放量下跌信号",
+      "消息面驱动的脉冲行情持续性差，宜快进快出"
     ],
     "nextDayPlan": [
       {
-        "phase": "Pre-market (9:00-9:25)",
+        "phase": "盘前 (9:00-9:25)",
         "actions": [
-          "Check overnight US market and A50 futures for opening direction",
-          "Monitor auction phase for sector strength, watch for concentrated sector gap-ups",
-          "Confirm watch-list and set alert prices"
+          "查看隔夜美股及A50期货走势，判断开盘方向",
+          "关注集合竞价阶段板块强度，重点看是否有板块集中高开",
+          "确认观察池标的，设置预警价位"
         ]
       },
       {
-        "phase": "Opening (9:30-10:00)",
+        "phase": "开盘 (9:30-10:00)",
         "actions": [
-          "Gap-up: wait 30 min to confirm holding above open; if volume insufficient, consider partial profit-taking",
-          "Gap-down: wait for stabilization (15-min no new low); watch sectors trading against the trend",
-          "Monitor north-bound flow direction at open"
+          "高开个股：等待30分钟确认能否站稳，若量能不足考虑部分止盈",
+          "低开个股：等待企稳信号（15分钟内不再创新低），关注逆势走强板块",
+          "观察开盘北向资金流向"
         ]
       },
       {
-        "phase": "Mid-session (10:00-14:30)",
+        "phase": "盘中 (10:00-14:30)",
         "actions": [
-          "Focus on top-2 theme persistence. Buy dips at MA support if volume contracts",
-          "If limit-up failure rate >40%, market disagreement high -> be cautious opening new positions",
-          "After 2pm, if index volume spikes upward, follow with main-theme positions"
+          "关注前两大主线题材持续性，缩量回踩均线支撑时低吸",
+          "若涨停炸板率超过40%，市场分歧大 → 谨慎开新仓",
+          "下午2点后若指数放量上攻，跟随主线仓位加仓"
         ]
       },
       {
-        "phase": "Closing (14:30-15:00)",
+        "phase": "尾盘 (14:30-15:00)",
         "actions": [
-          "If tail rally with volume, add for next-day gap-up premium",
-          "If tail selloff, reduce profitable positions to lock gains",
-          "Collect daily data for review, update watchlist status"
+          "若尾盘放量拉升，可适当加仓博次日高开溢价",
+          "若尾盘跳水，减持已有盈利仓位锁定利润",
+          "收盘后复盘当日数据，更新观察池评估"
         ]
       }
     ]
