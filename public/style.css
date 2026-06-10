@@ -136,3 +136,275 @@ tr:hover { background: #fafafa; }
   .header { flex-direction: column; gap: 8px; align-items: flex-start; }
 }
 
+
+/* ========== ???? ========== */
+
+.card-stock-analysis {
+  border-left: 3px solid #1677ff;
+}
+.card-header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  border-bottom: 1px solid #f0f0f0;
+  background: #fafafa;
+}
+.card-header-bar h2 {
+  font-size: 15px;
+  font-weight: 700;
+  border-bottom: none;
+  padding: 0;
+  background: none;
+}
+.btn-sm {
+  padding: 5px 12px;
+  font-size: 12px;
+}
+
+/* ???? */
+.stock-summary {
+  padding: 14px 18px;
+  border-bottom: 1px solid #f0f0f0;
+  background: #fafcff;
+}
+.summary-text {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+.summary-cards {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+.sum-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 24px;
+  border-radius: 6px;
+  min-width: 100px;
+}
+.sum-card .sum-num {
+  font-size: 24px;
+  font-weight: 700;
+}
+.sum-card .sum-label {
+  font-size: 12px;
+  color: #888;
+  margin-top: 2px;
+}
+.sum-buy { background: #fff1f0; }
+.sum-buy .sum-num { color: #cf1322; }
+.sum-hold { background: #fffbe6; }
+.sum-hold .sum-num { color: #d46b08; }
+.sum-sell { background: #f6ffed; }
+.sum-sell .sum-num { color: #389e0d; }
+
+.picks-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+}
+.pick-item {
+  padding: 6px 8px;
+  margin: 4px 0;
+  border-radius: 4px;
+  background: #fffbe6;
+  font-size: 12px;
+  line-height: 1.6;
+}
+.pick-detail {
+  color: #666;
+}
+
+/* ????? */
+.stock-analysis-row {
+  display: grid;
+  grid-template-columns: 180px 1fr 320px;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid #f0f0f0;
+  align-items: start;
+}
+.stock-analysis-row:last-child {
+  border-bottom: none;
+}
+.sa-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.sa-name {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.sa-index {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background: #f0f0f0;
+  font-size: 11px;
+  font-weight: 700;
+  color: #888;
+  flex-shrink: 0;
+}
+.sa-code {
+  font-size: 11px;
+  color: #bbb;
+  font-family: monospace;
+}
+.sa-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+.sa-price {
+  font-size: 20px;
+  font-weight: 700;
+}
+.sa-center {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.sa-indicators {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.sa-ind {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4px 10px;
+  background: #fafafa;
+  border-radius: 4px;
+  min-width: 56px;
+}
+.sa-label {
+  font-size: 10px;
+  color: #aaa;
+  font-weight: 600;
+}
+.sa-val {
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+}
+.sa-trend {
+  font-size: 12px;
+  color: #555;
+}
+.sa-vol-desc {
+  font-size: 11px;
+  color: #999;
+}
+.sa-right {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.sa-action-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.badge-sm { padding: 2px 6px; font-size: 11px; }
+.badge-buy { background: #fff1f0; color: #cf1322; }
+.badge-sell { background: #f6ffed; color: #389e0d; }
+.badge-hold { background: #e6f7ff; color: #1677ff; }
+.sa-confidence {
+  font-size: 12px;
+  font-weight: 600;
+}
+.sa-reason {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.5;
+}
+.sa-prices {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.sa-price-tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.sa-price-tag.entry { background: #e6f7ff; color: #1677ff; }
+.sa-price-tag.stop { background: #fff1f0; color: #cf1322; }
+.sa-price-tag.target { background: #f6ffed; color: #389e0d; }
+.sa-price-tag.rr { background: #fffbe6; color: #d46b08; }
+.sa-sr {
+  display: flex;
+  gap: 16px;
+  font-size: 11px;
+  color: #999;
+}
+.sa-sr-item { }
+
+@media (max-width: 1000px) {
+  .stock-analysis-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
+
+/* Stock search */
+.stock-search-row { display: flex; gap: 8px; align-items: center; }
+.stock-code-input { padding: 6px 12px; border: 1px solid #d9d9d9; border-radius: 4px; font-size: 14px; width: 180px; font-family: monospace; }
+.stock-code-input:focus { border-color: #1677ff; outline: none; box-shadow: 0 0 0 2px rgba(22,119,255,0.15); }
+
+/* Single stock analysis */
+.ssa-card { background: #fff; border-radius: 6px; overflow: hidden; }
+.ssa-header { display: flex; justify-content: space-between; align-items: center; padding: 16px 20px; border-bottom: 1px solid #f0f0f0; background: #fafafa; }
+.ssa-header-left h3 { margin: 0 0 4px 0; font-size: 18px; }
+.ssa-price-row { display: flex; align-items: baseline; gap: 8px; }
+.ssa-price { font-size: 24px; font-weight: 700; color: #1a1a1a; }
+.ssa-action { padding: 12px 20px; border-radius: 6px; text-align: center; min-width: 120px; }
+.ssa-action-text { font-size: 20px; font-weight: 700; }
+.ssa-confidence { font-size: 12px; margin-top: 2px; opacity: 0.8; }
+.ssa-body { padding: 16px 20px; }
+.ssa-section { margin-bottom: 16px; }
+.ssa-section h4 { font-size: 14px; color: #595959; margin: 0 0 8px 0; padding-bottom: 4px; border-bottom: 1px solid #f0f0f0; }
+.ssa-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.ssa-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.ssa-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.ssa-item { background: #fafafa; padding: 8px 12px; border-radius: 4px; display: flex; flex-direction: column; }
+.ssa-item .ssa-label { font-size: 11px; color: #8c8c8c; margin-bottom: 2px; }
+.ssa-item .ssa-value { font-size: 14px; font-weight: 600; color: #1a1a1a; }
+.ssa-support { border-left: 3px solid #52c41a; }
+.ssa-resist { border-left: 3px solid #ff4d4f; }
+.ssa-advice { background: #fffbe6; border-left: 3px solid #faad14; padding: 12px 16px; border-radius: 4px; }
+.ssa-advice p { margin: 4px 0; font-size: 13px; }
+.ssa-kline-table { overflow-x: auto; }
+.ssa-kline-table table { width: 100%; font-size: 12px; border-collapse: collapse; }
+.ssa-kline-table th { text-align: right; padding: 4px 8px; background: #fafafa; color: #8c8c8c; font-weight: 500; border-bottom: 1px solid #f0f0f0; }
+.ssa-kline-table td { text-align: right; padding: 3px 8px; border-bottom: 1px solid #f5f5f5; font-family: monospace; }
+.ssa-kline-table th:first-child, .ssa-kline-table td:first-child { text-align: left; }
+.kline-up td { color: #1a1a1a; }
+.kline-down td { color: #8c8c8c; }
+
+.ssa-ai-summary { display: flex; gap: 12px; align-items: flex-start; background: linear-gradient(135deg, #f0f5ff 0%, #e6f0ff 100%); border: 1px solid #b3d4ff; border-radius: 8px; padding: 14px 18px; margin: 12px 0 0 0; }
+.ssa-ai-icon { flex-shrink: 0; width: 32px; height: 32px; background: #1677ff; color: #fff; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; letter-spacing: 0.5px; }
+.ssa-ai-text { font-size: 13px; line-height: 1.7; color: #1a1a1a; }

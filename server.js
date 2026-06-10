@@ -171,7 +171,42 @@ app.get('/api/scheduler', (req, res) => {
   res.json({ success: true, status: scheduler.getStatus() });
 });
 
-// 启动服务器
+// API: 单只股票深度分析（输入任意6位代码，返回综合AI买卖建议）
+app.get('/api/stock/:code/analyze', async (req, res) => {
+  try {
+    const code = req.params.code;
+    if (!code || code.length !== 6) {
+      return res.json({ success: false, error: '无效的股票代码' });
+    }
+    const market = req.query.market || (code.startsWith('6') || code.startsWith('68') ? '1' : '0');
+    
+    const [quoteList, klineData] = await Promise.all([
+      eastmoney.getStockQuotes([code]),
+      eastmoney.getStockKline(code, market, 60)
+    ]);
+    
+    const quote = quoteList && quoteList.length > 0 ? quoteList[0] : null;
+    const name = quote ? quote.name : code;
+    
+    const analysis = require('./services/analysis').analyzeSingleStock(name, code, quote, klineData);
+    
+    res.json({ success: true, analysis, quote, kline: klineData });
+  } catch (e) {
+    res.json({ success: false, error: e.message });
+  }
+});
+app.get('/api/stock-analysis', async (req, res) => {
+  try {
+    const config = analysis.loadConfig();
+    const watchlist = config.watchlist || [];
+    const stocks = await analysis.analyzeIndividualStocks(eastmoney, watchlist);
+    const summary = analysis.generateStockSummary(stocks);
+    res.json({ success: true, stocks, summary });
+  } catch (e) {
+    res.json({ success: false, error: e.message });
+  }
+});
+
 app.listen(PORT, () => {
   console.log(`\n========================================`);
   console.log(`  股票交易日线看板服务已启动`);
